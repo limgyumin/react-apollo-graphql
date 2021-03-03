@@ -1,0 +1,50 @@
+.main-post-item {
+  position: relative;
+  width: 100%;
+  margin: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 25px -5px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover > &-progress-bar {
+    width: 100%;
+  }
+
+  &-container {
+    padding: 1.2rem 1rem;
+
+    &-title,
+    &-description,
+    &-content {
+      color: black;
+    }
+
+    &-title {
+      margin-top: 0;
+    }
+
+    &-created-at {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: normal;
+      color: rgb(158, 159, 161);
+    }
+  }
+
+  &-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &-progress-bar {
+    height: 5px;
+    width: 0%;
+    background-color: rgb(41, 43, 48);
+    transition: width 0.5s ease;
+  }
+}
